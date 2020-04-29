@@ -1,26 +1,57 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Loading from './pages/Loading/Loading'
+import Nav from './components/Nav/Nav'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    isLoading: true,
+    scrollYPosition: 0,
+    menuIsOpen: false,
+  }
+
+  componentDidMount() {
+    this.changeIsLoadingToFalse()
+    window.addEventListener('scroll', this.checkScrollY)
+  }
+
+  changeIsLoadingToFalse = () => {
+    setTimeout(() => {
+      this.setState({
+        isLoading: false
+      })
+    }, 3000)
+  }
+
+  checkScrollY = () => {
+    const scrollYPosition = window.scrollY
+    this.setState({
+      scrollYPosition
+    })
+  }
+
+  handleBurgerOnClick = () => {
+    this.setState({
+      menuIsOpen: !this.state.menuIsOpen
+    })
+  }
+
+  render() {
+    const { isLoading, scrollYPosition, menuIsOpen } = this.state
+    return (
+      <div className='app'>
+        <Loading
+          isLoading={isLoading}
+        />
+        <Nav
+          scrollYPosition={scrollYPosition}
+          menuIsOpen={menuIsOpen}
+          handleBurgerOnClick={this.handleBurgerOnClick}
+        />
+      </div>
+
+    )
+  }
 }
 
 export default App;
