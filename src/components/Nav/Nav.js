@@ -1,14 +1,20 @@
 import React from 'react'
 import Burger from '../Burger/Burger'
+import Logo from '../Logo/Logo'
+import NavOrderSpan from '../NavOrderSpan/NavOrderSpan'
 import './nav.css'
 
 const Nav = (props) => {
   return (
     <nav className={props.scrollYPosition && 'scrolled'}>
-      <Burger
-        menuIsOpen={props.menuIsOpen}
-        handleBurgerOnClick={props.handleBurgerOnClick}
-      />
+      <div className="wrapper">
+        <Burger
+          menuIsOpen={props.menuIsOpen}
+          handleBurgerOnClick={props.handleBurgerOnClick}
+        />
+        <Logo />
+        <NavOrderSpan />
+      </div>
     </nav>
   )
 }

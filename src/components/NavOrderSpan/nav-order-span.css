@@ -1,0 +1,19 @@
+.nav-span{
+  text-decoration: none;
+  transition: .2s;
+  transform-origin: center right
+}
+
+.nav-span span{
+  display: block;
+  text-align: right;
+  color: #F12B81;
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  width: 200px;
+}
+
+.nav-span:hover{
+  transform: scale(1.1);
+}
