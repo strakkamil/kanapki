@@ -60,6 +60,10 @@ class App extends Component {
     window.open('https://www.google.com/maps/place/Plac+Corazziego/@51.4009817,21.1556939,17z/data=!3m1!4b1!4m5!3m4!1s0x47185fe2edfddc4b:0xf17fa83ca64af933!8m2!3d51.4009784!4d21.1578826?hl=pl')
   }
 
+  handleOpenFacebook = () => {
+    window.open('https://www.facebook.com/Kanapkarnia-100997474885965')
+  }
+
   render() {
     const { isLoading, scrollYPosition, menuIsOpen, heroImage } = this.state
     return (
@@ -72,6 +76,7 @@ class App extends Component {
             menuIsOpen={menuIsOpen}
             handleBurgerOnClick={this.handleBurgerOnClick}
             handleOpenMap={this.handleOpenMap}
+            handleOpenFacebook={this.handleOpenFacebook}
           />
           <Nav
             scrollYPosition={scrollYPosition}

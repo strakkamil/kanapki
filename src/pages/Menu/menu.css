@@ -73,6 +73,7 @@
   top: 0;
   right: 0;
   z-index: 1;
+  cursor: pointer;
 }
 
 .right .close span{
@@ -80,5 +81,93 @@
   font-weight: 500;
   color: #F12B81;
   font-size: 1.6rem;
-  cursor: pointer;
 }
+
+.left div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 17.5vh;
+}
+
+.left div span{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.left div span:hover{
+  color: #00dacd;
+}
+
+.left div::after{
+  content: '';
+  display: block;
+  margin-top: 10px;
+  height: 6px;
+  width: 50px;
+}
+
+.left div:nth-child(even)::after{
+  background-color: #00dacd;
+}
+
+.left div:nth-child(odd)::after{
+  background-color: #F12B81;
+}
+
+.left div:nth-child(even){
+  background-color: #fff;
+  color: black;
+}
+
+.left div:nth-child(odd){
+  background-color: black;
+  color: white;
+}
+
+.left div:nth-child(5){
+  height: 30vh;
+}
+
+.left div:nth-child(5)::after,
+.left div:nth-child(5) .socials::after,
+.left div:nth-child(5) .social::after {
+  display: none;
+}
+
+.left div:nth-child(5) img{
+  height: 100px;
+}
+
+.left div:nth-child(5) .socials span{
+  font-size: 1rem;
+}
+
+.left div:nth-child(5) .socials{
+  flex-direction: row;
+  width: 400px;
+}
+
+.left div:nth-child(5) .social{
+background-color:black;
+}
+
+.left div:nth-child(5) .social .quality{
+  color: #00dacd;
+  cursor: auto;
+}
+
+.left div:nth-child(5) .social .social-span{
+  color: #F12B81;
+  cursor: auto;
+}
+
+
+
