@@ -1,0 +1,84 @@
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  transform: translateX(-100%);
+  background-color: white;
+  z-index: 1;
+  transition: .6s;
+}
+
+.menu.active{
+  transform: translateX(0);
+}
+
+.menu section{
+  height: 100%;
+}
+
+.left{
+  height: 100%;
+  width: 40%;
+}
+
+.right{
+  position: relative;
+  width: 60%;
+  background-image: url('../../images/map.jpg');
+  background-position: bottom;
+  background-size: cover;
+}
+
+.right .map{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.right .map:hover + .open-maps{
+  opacity: 1;
+}
+
+.right .open-maps:hover{
+  opacity: 1;
+}
+
+.right .open-maps{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  color: #F12B81;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.right .close{
+  position: absolute;
+  margin: 20px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+  width: 100px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.right .close span{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #F12B81;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
