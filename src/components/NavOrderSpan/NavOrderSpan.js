@@ -4,7 +4,7 @@ import './nav-order-span.css'
 
 const NavOrderSpan = (props) => {
   return (
-    <NavLink to='konakt' className='nav-span'>
+    <NavLink to='/' className='nav-span'>
       <span>Zamów teraz</span>
     </NavLink>
   )

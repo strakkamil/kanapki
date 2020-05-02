@@ -6,6 +6,7 @@ nav{
   height: 10vh;
   background-color: #fff;
   transition: box-shadow .25s;
+  z-index: 1;
 }
 
 nav .wrapper{
@@ -20,12 +21,6 @@ nav .wrapper{
 
 nav.scrolled{
   box-shadow: 0 0 7px 1px #888;
-}
-
-@media (max-width: 560px) and (min-width: 481px){
-  nav{
-    background-color: black;
-  }
 }
 
 @media (max-width: 480px){

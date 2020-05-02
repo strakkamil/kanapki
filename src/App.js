@@ -5,6 +5,7 @@ import Menu from './pages/Menu/Menu'
 import Nav from './components/Nav/Nav'
 import Hero from './components/Hero/Hero'
 import InfoSection from './components/Info-section/InfoSection'
+import History from './components/History/History'
 import './App.css'
 
 class App extends Component {
@@ -78,21 +79,23 @@ class App extends Component {
             handleOpenMap={this.handleOpenMap}
             handleOpenFacebook={this.handleOpenFacebook}
           />
-          <Nav
-            scrollYPosition={scrollYPosition}
-            menuIsOpen={menuIsOpen}
-            handleBurgerOnClick={this.handleBurgerOnClick}
-          />
           <Route
             path='/'
             exact
           >
+            <Nav
+              scrollYPosition={scrollYPosition}
+              menuIsOpen={menuIsOpen}
+              handleBurgerOnClick={this.handleBurgerOnClick}
+            />
+
             <Hero
               image={heroImage}
             />
             <InfoSection
               handleOpenMap={this.handleOpenMap}
             />
+            <History />
           </Route>
         </div>
       </Router>

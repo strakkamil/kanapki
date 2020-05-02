@@ -8,6 +8,8 @@
   width: 1280px;
   height: 70vh;
   background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero .image .animation .filter{
