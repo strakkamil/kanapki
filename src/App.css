@@ -11,6 +11,7 @@ body{
   min-height: 200vh;
   width: 100%;
   user-select: none;
+  background-color: #fff;
 }
 
 @media (min-width: 320px) and (max-width: 480){

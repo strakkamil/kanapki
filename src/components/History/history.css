@@ -52,7 +52,7 @@
   padding-bottom: 5px;
   font-size: 1.3rem;
   font-family: 'Montserrat', sans-serif;
-  text-shadow: 1px 1px #00dacd;
+  /* text-shadow: 1px 1px #00dacd; */
   letter-spacing: 1px;
 }
 
@@ -100,5 +100,4 @@
     padding: 20px;
     font-size: 1.2rem;
   }
-
 }

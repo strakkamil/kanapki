@@ -15,8 +15,8 @@ nav .wrapper{
   align-items: center;
   width: 1280px;
   height: 100%;
-  margin-left: 2px;
-  margin-right: 2px;
+  /* margin-left: 2px; */
+  /* margin-right: 2px; */
 }
 
 nav.scrolled{

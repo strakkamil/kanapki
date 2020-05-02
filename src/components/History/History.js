@@ -5,7 +5,7 @@ const History = (props) => {
   return (
     <section className="history">
       <div className="history-photo">
-        <span>Z szynka</span>
+        <span>Z szynką</span>
         <span>Kanapkarnia</span>
       </div>
       <div className="history-info">

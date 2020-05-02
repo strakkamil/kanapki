@@ -6,11 +6,12 @@ import Nav from './components/Nav/Nav'
 import Hero from './components/Hero/Hero'
 import InfoSection from './components/Info-section/InfoSection'
 import History from './components/History/History'
+import Sandwiches from './components/Sandwiches/Sandwiches'
 import './App.css'
 
 class App extends Component {
   state = {
-    isLoading: true,
+    // isLoading: true,
     scrollYPosition: 0,
     menuIsOpen: false,
     heroImage: 'hero1'
@@ -96,6 +97,7 @@ class App extends Component {
               handleOpenMap={this.handleOpenMap}
             />
             <History />
+            <Sandwiches />
           </Route>
         </div>
       </Router>
