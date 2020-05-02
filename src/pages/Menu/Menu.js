@@ -7,6 +7,12 @@ import LogoDark from '../../images/logo-dark.jpg'
 const Menu = (props) => {
   return (
     <div className={props.menuIsOpen ? 'menu active' : 'menu'}>
+      <div className="left-close" onClick={props.handleBurgerOnClick}>
+        <CloseIcon
+          fontSize='large'
+          style={{ color: '#F12B81', cursor: 'pointer' }}
+        />
+      </div>
       <section className="left">
         <div>
           <span>Kanapki</span>

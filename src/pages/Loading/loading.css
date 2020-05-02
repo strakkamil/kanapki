@@ -67,3 +67,11 @@
   transform: translateY(-110%);
   transition: 1.5s;
 }
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .loading{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
+}

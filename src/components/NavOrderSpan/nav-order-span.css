@@ -17,3 +17,9 @@
 .nav-span:hover{
   transform: scale(1.1);
 }
+
+@media (max-width:480px){
+  .nav-span{
+    display: none;
+  }
+}

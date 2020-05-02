@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, .4);
   animation: slider-filter 7s infinite;
 }
 
@@ -83,16 +83,29 @@
     background-color: rgba(0, 0, 0, 0);
   }
   15%{
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .4);
   }
   85%{
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .4);
   }
   95%{
     background-color: rgba(0, 0, 0, 0);
   }
   100%{
     background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@media (min-width: 319px) and (max-width: 560px){
+  .hero .image{
+    min-width: 100vw;
+  }
+  .hero .image .filter h1{
+    font-size: 2.5rem;
+  }
+  .hero .image .filter .tags span{
+    margin: 10px;
+    font-size: 1.5rem;
   }
 }
 

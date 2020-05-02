@@ -9,7 +9,7 @@ import './App.css'
 
 class App extends Component {
   state = {
-    // isLoading: true,
+    isLoading: true,
     scrollYPosition: 0,
     menuIsOpen: false,
     heroImage: 'hero1'

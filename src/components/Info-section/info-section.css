@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   height: 20vh;
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -54,4 +54,25 @@ text-align: center;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+}
+
+@media(max-width: 1024px){
+  .info{
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60vh;
+    width: 100vw;
+  }
+}
+
+@media(max-width: 560px){
+  .info .opening-hours,
+  .info .phone-email,
+  .info .address{
+    width: 100%;
+  }
+  .info .opening-hours span:nth-child(2){
+    margin-left: 10px;
+  }
+
 }

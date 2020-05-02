@@ -12,3 +12,9 @@ body{
   width: 100%;
   user-select: none;
 }
+
+@media (min-width: 320px) and (max-width: 480){
+  body{
+    width: 100%;
+  }
+}
