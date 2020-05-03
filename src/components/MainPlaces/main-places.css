@@ -1,0 +1,66 @@
+.main-places{
+  max-width: 1280px;
+  height: 50vh;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-places h4{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  text-shadow: 2px 2px #00dacd;
+  margin-bottom: 50px;
+}
+
+.main-places .places{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-self: stretch;
+  flex-grow: 1;
+}
+
+.main-places .places div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.main-places .places div span{
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  margin: 10px
+}
+
+.main-places .places div:nth-child(odd){
+  background-color: #000;
+  color: #fff;
+  text-shadow: 1px 1px #F12B81;
+}
+
+.main-places .places div:nth-child(even){
+  background-color: #fff;
+  color: #000;
+  text-shadow: 1px 1px #00dacd;
+}
+
+.main-places .places div:nth-child(even):hover{
+  background-color: #00dacd;
+  color: #fff;
+  text-shadow: 1px 1px #F12B81;
+}
+
+.main-places .places div:nth-child(odd):hover{
+  background-color: #F12B81;
+  color: #000;
+  text-shadow: 1px 1px #00dacd;
+}

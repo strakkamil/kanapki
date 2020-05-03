@@ -1,0 +1,128 @@
+.order-now{
+  max-width: 1280px;
+  height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch ;
+}
+
+.order-now div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  height: 400px;
+}
+
+.order-now div:nth-child(1),
+.order-now div:nth-child(3){
+  background-color: #000;
+  color: #fff;
+  animation: odd 4s infinite;
+}
+
+.order-now div:nth-child(3){
+  animation: odd 3s infinite;
+}
+
+.order-now div:nth-child(2){
+  background-color: #F12B81;
+  color: #00dacd;
+  animation: even 4s infinite;
+}
+
+.order-now div:nth-child(2) span{
+  animation: span 3s infinite;
+}
+
+.order-now div span{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.order-now div:nth-child(1) span{
+  animation: span 4s infinite;
+}
+
+.order-now div:nth-child(1) span:nth-child(2){
+  animation: span 2s infinite 1s;
+}
+
+.order-now div:nth-child(3) span:nth-child(1){
+  animation: span 4s infinite 1s;
+}
+
+.order-now div:nth-child(3) span:nth-child(2){
+  animation: span 3s infinite 1s;
+}
+
+.order-now div:nth-child(3) span:nth-child(3){
+  animation: span 3s infinite 2s;
+}
+
+@keyframes odd{
+  0%{
+    background-color: #000;
+    color: #fff;
+    text-shadow: 2px 2px #F12B81;
+  }
+  49%{
+    background-color: #000;
+    color: #fff;
+    text-shadow: 2px 2px #F12B81;
+  }
+  50%{
+    color: #000;
+    background-color: #fff;
+    text-shadow: 2px 2px #00dacd;
+  }
+  100%{
+    color: #000;
+    background-color: #fff;
+    text-shadow: 2px 2px #00dacd;
+  }
+}
+
+@keyframes span{
+  0%{
+    opacity: 0;
+  }
+  49%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes even{
+  0%{
+    background-color: #F12B81;
+    color: #00dacd;
+    text-shadow: 2px 2px #000;
+  }
+  49%{
+    background-color: #F12B81;
+    color: #00dacd;
+    text-shadow: 2px 2px #000;
+  }
+  50%{
+    color: #F12B81;
+    background-color: #00dacd;
+    text-shadow: 2px 2px #fff;
+  }
+  100%{
+    color: #F12B81;
+    background-color: #00dacd;
+    text-shadow: 2px 2px #fff;
+  }
+}
+
