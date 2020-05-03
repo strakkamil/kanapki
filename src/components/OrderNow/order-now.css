@@ -1,6 +1,6 @@
 .order-now{
   max-width: 1280px;
-  height: 50vh;
+  min-height: 50vh;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -126,3 +126,18 @@
   }
 }
 
+@media(max-width: 480px){
+  .order-now {
+    flex-direction: column;
+    height: 80vh;
+  }
+  .order-now div{
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 680px){
+  .order-now div span{
+    font-size: 2rem;
+  }
+}

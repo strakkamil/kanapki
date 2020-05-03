@@ -20,7 +20,7 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
-  animation: slider 7s infinite;
+  animation: slider 12s infinite;
 }
 
 .hero .image .animation{
@@ -31,7 +31,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, .4);
-  animation: slider-filter 7s infinite;
+  animation: slider-filter 12s infinite;
 }
 
 .hero .image .filter h1{
