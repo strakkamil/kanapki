@@ -15,12 +15,12 @@ nav .wrapper{
   align-items: center;
   width: 1280px;
   height: 100%;
-  /* margin-left: 2px; */
-  /* margin-right: 2px; */
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 nav.scrolled{
-  box-shadow: 0 0 7px 1px #888;
+  box-shadow: 0 0 20px 2px #bbb;
 }
 
 @media (max-width: 480px){

@@ -5,7 +5,15 @@ import './info-section.css'
 const checkHour = () => {
   const date = Date.now()
   const h = new Date(date).getHours()
-  if (h >= 17 || h < 8) {
+  const day = new Date(date).getDay()
+  if (day === 0 || day === 6) {
+    return (
+      <>
+        <span>Otwieramy w poniedziałek o...</span>
+        <span>8.00</span>
+      </>
+    )
+  } else if (h >= 17 || h < 8) {
     return (
       <>
         <span>Otwieramy o...</span>

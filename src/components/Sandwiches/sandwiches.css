@@ -22,6 +22,7 @@
 
 .sandwiches h3{
   font-size: 2rem;
+  margin: 20px;
   font-family: 'Montserrat', sans-serif;
   text-shadow: 2px 2px #00dacd;
 }
@@ -39,6 +40,7 @@
   height: 400px;
   width: 300px;
   margin: 20px;
+  filter: drop-shadow(0 0 20px #777);
 }
 
 .sandwiches .sandwiches-info .sandwich .front,
@@ -118,9 +120,24 @@
   transform: perspective(900px) rotateY(0deg);
 }
 
+@media (max-width: 380px){
+  .sandwiches h3{
+    margin: 10px;
+  }
+}
+@media (max-width: 480px){
+  .sandwiches .sandwiches-info .sandwich{
+    height: 300px;
+    width: 200px;
+  }
+  .sandwiches .sandwiches-info .sandwich .back ul li{
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 1024px){
   .sandwiches h3{
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 1.3rem;
   }
 }

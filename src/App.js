@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Loading from './pages/Loading/Loading'
 import Menu from './pages/Menu/Menu'
+import Messenger from './components/Messenger/Messenger'
 import Nav from './components/Nav/Nav'
 import Hero from './components/Hero/Hero'
 import InfoSection from './components/Info-section/InfoSection'
@@ -11,7 +12,7 @@ import './App.css'
 
 class App extends Component {
   state = {
-    // isLoading: true,
+    isLoading: true,
     scrollYPosition: 0,
     menuIsOpen: false,
     heroImage: 'hero1'
@@ -80,6 +81,7 @@ class App extends Component {
             handleOpenMap={this.handleOpenMap}
             handleOpenFacebook={this.handleOpenFacebook}
           />
+          {!isLoading && <Messenger />}
           <Route
             path='/'
             exact
