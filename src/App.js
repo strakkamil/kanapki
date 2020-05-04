@@ -11,11 +11,12 @@ import History from './components/History/History'
 import Sandwiches from './components/Sandwiches/Sandwiches'
 import OrderNow from './components/OrderNow/OrderNow'
 import MainPlaces from './components/MainPlaces/MainPlaces';
+import Footer from './components/Footer/Footer'
 import './App.css'
 
 class App extends Component {
   state = {
-    isLoading: true,
+    // isLoading: true,
     scrollYPosition: 0,
     menuIsOpen: false,
     heroImage: 'hero1'
@@ -28,12 +29,12 @@ class App extends Component {
   }
 
   changeIsLoadingToFalse = () => {
-    disableBodyScroll(window)
+    // disableBodyScroll(window)
     setTimeout(() => {
       this.setState({
         isLoading: false
       })
-      enableBodyScroll(window)
+      // enableBodyScroll(window)
     }, 3000)
   }
 
@@ -113,6 +114,9 @@ class App extends Component {
             <h4>Punkty firmowe</h4>
             <MainPlaces
               handleOpenPlaceMap={this.handleOpenPlaceMap}
+            />
+            <Footer
+              handleOpenFacebook={this.handleOpenFacebook}
             />
           </Route>
         </div>

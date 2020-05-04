@@ -1,0 +1,111 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+
+footer .footer-socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 20%;
+  width: 100%;
+}
+
+footer .footer-socials .footer-socials-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50%;
+}
+
+footer .footer-socials .footer-socials-info span{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  color: #00dacd;
+  font-weight: 500;
+}
+
+footer .footer-socials .footer-socials-info span:nth-child(2){
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #F12B81;
+}
+
+footer .company-info{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  min-height: 10vh;
+}
+
+footer .company-info .author,
+footer .company-info .company{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+footer .company-info .author p,
+footer .company-info .company p,
+footer .company-info .company p span{
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+}
+
+footer .company-info .author p a{
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+  text-decoration: none;
+  color: white;
+  transition: color .2s;
+}
+
+footer .company-info .company p span{
+  transition: color .2s;
+  cursor: pointer;
+}
+
+footer .company-info .author p span{
+  transition: color .2s;
+  cursor: pointer;
+}
+
+footer .company-info .company p span:hover{
+  color: #00dacd;
+}
+
+footer .company-info .author p a:hover{
+  color: #F12B81;
+}
+
+@media (max-width: 1024px){
+  footer .company-info{
+    flex-direction: column;
+  }
+  footer .company-info .author,
+  footer .company-info .company{
+    width: 90%;
+  }
+  footer .company-info .company{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  footer .company-info .author{
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}

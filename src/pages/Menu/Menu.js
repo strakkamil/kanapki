@@ -34,7 +34,10 @@ const Menu = (props) => {
               <span className='social-span'>Dołącz do nas</span>
               <span className='icon'>
                 <FacebookIcon
-                  style={{ color: '#F12B81' }}
+                  style={{
+                    color: '#F12B81',
+                    cursor: 'pointer'
+                  }}
                   onClick={props.handleOpenFacebook}
                 />
               </span>
