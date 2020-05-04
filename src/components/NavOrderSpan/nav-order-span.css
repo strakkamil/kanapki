@@ -1,10 +1,10 @@
-.nav-span{
+.nav-span a{
   text-decoration: none;
   transition: .2s;
-  transform-origin: center right
+  transform-origin: center right;
 }
 
-.nav-span span{
+.nav-span a{
   display: block;
   text-align: right;
   color: #F12B81;
@@ -14,7 +14,7 @@
   width: 200px;
 }
 
-.nav-span:hover{
+.nav-span a:hover{
   transform: scale(1.1);
 }
 

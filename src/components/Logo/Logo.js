@@ -5,7 +5,7 @@ import logo from '../../images/logo.jpg'
 
 const Logo = (props) => {
   return (
-    <NavLink to='/' className='nav-logo'>
+    <NavLink to='#' className='nav-logo' onClick={props.handleBackToTop}>
       <img src={logo} alt='logo' />
     </NavLink>
   )

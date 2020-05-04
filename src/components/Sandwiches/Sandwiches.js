@@ -4,7 +4,7 @@ import foto from '../../images/history-photo.jpg'
 
 const Sandwiches = (props) => {
   return (
-    <section className="sandwiches">
+    <section className="sandwiches" id='sandwiches'>
       <div className="background"></div>
       <h3>Przejrzyj kanapkową ofertę</h3>
       <div className='sandwiches-info'>

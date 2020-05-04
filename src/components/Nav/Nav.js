@@ -12,7 +12,9 @@ const Nav = (props) => {
           menuIsOpen={props.menuIsOpen}
           handleBurgerOnClick={props.handleBurgerOnClick}
         />
-        <Logo />
+        <Logo
+          handleBackToTop={props.handleBackToTop}
+        />
         <NavOrderSpan />
       </div>
     </nav>

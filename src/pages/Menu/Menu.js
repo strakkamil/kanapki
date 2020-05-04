@@ -1,8 +1,11 @@
 import React from 'react'
 import CloseIcon from '@material-ui/icons/Close';
 import FacebookIcon from '@material-ui/icons/Facebook';
+import { Link as ScrollLink } from 'react-scroll'
 import './menu.css'
 import LogoDark from '../../images/logo-dark.jpg'
+
+const vh = Math.round(window.innerHeight / 100)
 
 const Menu = (props) => {
   return (
@@ -15,16 +18,24 @@ const Menu = (props) => {
       </div>
       <section className="left">
         <div>
-          <span>Kanapki</span>
+          <ScrollLink to='sandwiches' smooth={true} duration={400} delay={600} offset={-(10 * vh)}>
+            <span onClick={props.handleBurgerOnClick}>Kanapki</span>
+          </ScrollLink>
         </div>
         <div>
-          <span>Oferta</span>
+          <ScrollLink to='main-places' smooth={true} duration={400} delay={600} offset={-(10 * vh)}>
+            <span onClick={props.handleBurgerOnClick}>Punkty firmowe</span>
+          </ScrollLink>
         </div>
         <div>
-          <span>792 674 777</span>
+          <span>
+            <a href='tel:792 674 777'>792 674 777</a>
+          </span>
         </div>
         <div>
-          <span>kanapkarniaradom@op.pl</span>
+          <span>
+            <a href='mailto:kanapkarniaradom@op.pl'>kanapkarniaradom@op.pl</a>
+          </span>
         </div>
         <div>
           <div className="socials">
@@ -56,7 +67,7 @@ const Menu = (props) => {
         <div className='map'></div>
         <span className='open-maps' onClick={props.handleOpenMap}>Przejdz do map</span>
       </section>
-    </div>
+    </div >
   )
 }
 

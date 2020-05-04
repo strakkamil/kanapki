@@ -1,12 +1,11 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import './nav-order-span.css'
 
 const NavOrderSpan = (props) => {
   return (
-    <NavLink to='/' className='nav-span'>
-      <span>Zamów teraz</span>
-    </NavLink>
+    <div className='nav-span'>
+      <a href='tel:660442626'>Zamów teraz</a>
+    </div>
   )
 }
 

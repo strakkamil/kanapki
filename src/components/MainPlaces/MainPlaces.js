@@ -41,7 +41,7 @@ const MainPlaces = (props) => {
     )
   })
   return (
-    <div className='main-places'>
+    <div className='main-places' id='main-places'>
       <div className="places">
         {places}
       </div>

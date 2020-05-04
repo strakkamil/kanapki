@@ -102,6 +102,30 @@
   transition: .3s;
 }
 
+.left div span a{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.left div span a:hover{
+  color: #00dacd;
+}
+
+.left div:nth-child(4) span a{
+  color: black;
+}
+.left div:nth-child(4) span a:hover{
+  color: #00dacd;
+}
+
+
 .left div span:hover{
   color: #00dacd;
 }
@@ -185,6 +209,9 @@ background-color:black;
     width: 100%;
   }
   .left div span{
+    font-size: 1rem;
+  }
+  .left div span a{
     font-size: 1rem;
   }
   .left div:nth-child(5) .socials{

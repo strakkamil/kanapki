@@ -76,9 +76,21 @@
   transition: color .3s, background-color .3s;
 }
 
+.history .history-info button a{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+
+}
+
 .history .history-info button:hover{
-  color: #F12B81;
   background-color: #fff;
+}
+
+.history .history-info button:hover > a{
+  color: #F12B81;
 }
 
 @media (max-width: 1024px){

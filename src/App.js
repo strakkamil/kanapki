@@ -16,7 +16,7 @@ import './App.css'
 
 class App extends Component {
   state = {
-    // isLoading: true,
+    isLoading: true,
     scrollYPosition: 0,
     menuIsOpen: false,
     heroImage: 'hero1'
@@ -29,12 +29,12 @@ class App extends Component {
   }
 
   changeIsLoadingToFalse = () => {
-    // disableBodyScroll(window)
+    disableBodyScroll(window)
     setTimeout(() => {
       this.setState({
         isLoading: false
       })
-      // enableBodyScroll(window)
+      enableBodyScroll(window)
     }, 3000)
   }
 
@@ -77,6 +77,10 @@ class App extends Component {
     window.open('https://www.facebook.com/Kanapkarnia-100997474885965')
   }
 
+  handleBackToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   render() {
     const { isLoading, scrollYPosition, menuIsOpen, heroImage } = this.state
     return (
@@ -100,6 +104,7 @@ class App extends Component {
               scrollYPosition={scrollYPosition}
               menuIsOpen={menuIsOpen}
               handleBurgerOnClick={this.handleBurgerOnClick}
+              handleBackToTop={this.handleBackToTop}
             />
 
             <Hero
