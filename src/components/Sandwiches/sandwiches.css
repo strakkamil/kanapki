@@ -15,8 +15,8 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url('../../images/background.png');
-  filter: opacity(25%);
+  /* background-image: url('../../images/background.png'); */
+  /* filter: opacity(25%); */
   z-index: -1;
 }
 
@@ -40,7 +40,7 @@
   height: 400px;
   width: 300px;
   margin: 20px;
-  filter: drop-shadow(0 0 20px #777);
+  filter: drop-shadow(0 0 10px #aaaaaa);
 }
 
 .sandwiches .sandwiches-info .sandwich .front,

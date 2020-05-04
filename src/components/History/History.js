@@ -11,9 +11,7 @@ const History = (props) => {
       <div className="history-info">
         <h2>Wierzymy w nasze kanapki</h2>
         <p>Kanapkarnia jest firmą działającą na rynku od 12 lat. W swojej ofercie posiadamy szeroki wybór kanapek, sałatek wytwarzanych ze świeżych produktów, dostarczanych od lokalnych dostawców. Kanapki pakujemy w ekologiczne, estetyczne torebki utrzymujące świeżość produktów.</p>
-        <button>
-          <a href='tel:660442826'>Zamów teraz</a>
-        </button>
+        <a href='tel:660442826'>Zamów teraz</a>
       </div>
     </section>
   )

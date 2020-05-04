@@ -12,23 +12,20 @@ body{
   width: 100%;
   user-select: none;
   background-color: #fff;
+  transition: .2s;
 }
 
 
 h4{
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 30px auto;
   text-align: center;
   text-shadow: 2px 2px #00dacd;
 }
 
-h5{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  margin: 30px auto;
-  text-align: center;
-  text-shadow: 2px 2px #00dacd;
+button, a {
+  outline: none;
 }
 
 @media (max-width: 480px){

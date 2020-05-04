@@ -8,7 +8,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   background: #fff;
   box-shadow: 0 0 10px 4px #ddd;

@@ -26,7 +26,7 @@ const Footer = (props) => {
       <div className='company-info'>
         <div className="company">
           <p>
-            &copy; {year} Kanapkarnia. Wszystkie prawa zastrzeżone. | <span>Polityka prywatności</span>
+            &copy; {year} Kanapkarnia. Wszystkie prawa zastrzeżone. | <span onClick={props.handlePrivacyPolicy}>Polityka prywatności</span>
           </p>
         </div>
         <div className="author">

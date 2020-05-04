@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import Loading from './pages/Loading/Loading'
 import Menu from './pages/Menu/Menu'
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import Messenger from './components/Messenger/Messenger'
+import Cookies from './components/Cookies/Cookies'
 import Nav from './components/Nav/Nav'
 import Hero from './components/Hero/Hero'
 import InfoSection from './components/Info-section/InfoSection'
@@ -19,13 +21,16 @@ class App extends Component {
     isLoading: true,
     scrollYPosition: 0,
     menuIsOpen: false,
-    heroImage: 'hero1'
+    heroImage: 'hero1',
+    privacyPolicy: false,
+    cookiesIsAccepted: false
   }
 
   componentDidMount() {
     this.changeIsLoadingToFalse()
     window.addEventListener('scroll', this.checkScrollY)
     this.heroSlider()
+    this.checkCookiesAccept()
   }
 
   changeIsLoadingToFalse = () => {
@@ -81,8 +86,35 @@ class App extends Component {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
+  handlePrivacyPolicy = () => {
+    this.setState({
+      privacyPolicy: !this.state.privacyPolicy
+    })
+  }
+
+  checkCookiesAccept = () => {
+    const cookiesIsAccepted = document.cookie.slice(18)
+    if (cookiesIsAccepted === 'true') {
+      this.setState({
+        cookiesIsAccepted: true
+      })
+    } else {
+      this.setState({
+        cookiesIsAccepted: false
+      })
+    }
+
+  }
+
+  handleAcceptCookies = () => {
+    document.cookie = 'cookiesIsAccepted=true'
+    this.setState({
+      cookiesIsAccepted: true
+    })
+  }
+
   render() {
-    const { isLoading, scrollYPosition, menuIsOpen, heroImage } = this.state
+    const { isLoading, scrollYPosition, menuIsOpen, heroImage, privacyPolicy, cookiesIsAccepted } = this.state
     return (
       <Router>
         <div className='app'>
@@ -95,6 +127,14 @@ class App extends Component {
             handleOpenMap={this.handleOpenMap}
             handleOpenFacebook={this.handleOpenFacebook}
           />
+          <PrivacyPolicy
+            privacyPolicy={privacyPolicy}
+            handlePrivacyPolicy={this.handlePrivacyPolicy}
+          />
+          {!cookiesIsAccepted && <Cookies
+            handlePrivacyPolicy={this.handlePrivacyPolicy}
+            handleAcceptCookies={this.handleAcceptCookies}
+          />}
           {!isLoading && <Messenger />}
           <Route
             path='/'
@@ -122,6 +162,7 @@ class App extends Component {
             />
             <Footer
               handleOpenFacebook={this.handleOpenFacebook}
+              handlePrivacyPolicy={this.handlePrivacyPolicy}
             />
           </Route>
         </div>

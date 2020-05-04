@@ -19,10 +19,6 @@ nav .wrapper{
   margin-right: 2px;
 }
 
-nav.scrolled{
-  box-shadow: 0 0 20px 2px #bbb;
-}
-
 @media (max-width: 480px){
   nav{
     position: fixed;

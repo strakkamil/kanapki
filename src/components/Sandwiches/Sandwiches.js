@@ -76,6 +76,40 @@ const Sandwiches = (props) => {
             </ul>
           </div>
         </div>
+        <div className="sandwich">
+          <div className="front">
+            <div className='sandwich-image' style={{ backgroundImage: `url(${foto})` }}></div>
+            <span className='name'>szynka</span>
+            <span className='additives'>składniki są z tyłu</span>
+          </div>
+          <div className="back">
+            <ul>
+              <li>pieczywo razowe</li>
+              <li>szynka</li>
+              <li>pomidor</li>
+              <li>ogórek</li>
+              <li>sałata</li>
+              <li>ketchup</li>
+            </ul>
+          </div>
+        </div>
+        <div className="sandwich">
+          <div className="front">
+            <div className='sandwich-image' style={{ backgroundImage: `url(${foto})` }}></div>
+            <span className='name'>szynka</span>
+            <span className='additives'>składniki są z tyłu</span>
+          </div>
+          <div className="back">
+            <ul>
+              <li>pieczywo razowe</li>
+              <li>szynka</li>
+              <li>pomidor</li>
+              <li>ogórek</li>
+              <li>sałata</li>
+              <li>ketchup</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   )
