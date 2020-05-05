@@ -107,7 +107,10 @@ class App extends Component {
   }
 
   handleAcceptCookies = () => {
-    document.cookie = 'cookiesIsAccepted=true'
+    const dateNow = Date.now()
+    const expiresDate = dateNow + 1000 * 60 * 60 * 24 * 30 * 12
+    const expires = new Date(expiresDate)
+    document.cookie = `cookiesIsAccepted=true; expires=${expires}`
     this.setState({
       cookiesIsAccepted: true
     })

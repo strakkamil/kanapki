@@ -12,7 +12,7 @@
   min-height: 100vh;
   background: #fff;
   box-shadow: 0 0 10px 4px #ddd;
-  z-index: 3;
+  z-index: 4;
 }
 
 .loading .dots{

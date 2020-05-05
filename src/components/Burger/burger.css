@@ -16,10 +16,10 @@ div.burger .wrapper{
 div.burger .wrapper span {
   display: block;
   background: #000;
-  height: 3px;
+  height: 2px;
   width: 40px;
-  border-radius: 2px;
-  animation-direction: both, reverse;
+  /* border-radius: 2px; */
+  /* animation-direction: both, reverse; */
 }
 
 div.burger .wrapper span:nth-child(1).active{
@@ -45,7 +45,7 @@ div.burger span:nth-child(3).deactive{
   animation: reverse-third .5s both;
 }
 
-@keyframes first {
+/* @keyframes first {
   0%{
     transform: translateY(0) rotate(0);
   }
@@ -122,6 +122,6 @@ div.burger span:nth-child(3).deactive{
   100%{
     transform: translateY(0) rotate(0);
   }
-}
+} */
 
 

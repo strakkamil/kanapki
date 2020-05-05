@@ -6,7 +6,7 @@ const checkHour = () => {
   const date = Date.now()
   const h = new Date(date).getHours()
   const day = new Date(date).getDay()
-  if (day === 0 || day === 6) {
+  if (day === 0 || day === 6 || (day === 5 && h >= 17)) {
     return (
       <>
         <span>Otwieramy w poniedziałek o...</span>

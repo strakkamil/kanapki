@@ -11,14 +11,14 @@
   margin: 50px 0;
 }
 
-.sandwiches .background{
+/* .sandwiches .background{
   position: absolute;
   height: 100%;
   width: 100%;
-  /* background-image: url('../../images/background.png'); */
-  /* filter: opacity(25%); */
+  background-image: url('../../images/background.png');
+  filter: opacity(25%);
   z-index: -1;
-}
+} */
 
 .sandwiches h3{
   font-size: 2rem;
@@ -40,7 +40,8 @@
   height: 400px;
   width: 300px;
   margin: 20px;
-  filter: drop-shadow(0 0 10px #aaaaaa);
+  filter: drop-shadow(0 0 20px #aaa);
+  z-index: 1;
 }
 
 .sandwiches .sandwiches-info .sandwich .front,

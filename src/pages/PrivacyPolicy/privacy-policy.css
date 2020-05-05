@@ -7,7 +7,7 @@
   width: 100%;
   background-color: #fff;
   transform: translateX(100%);
-  z-index: 2;
+  z-index: 3;
   transition: transform .6s;
 }
 
