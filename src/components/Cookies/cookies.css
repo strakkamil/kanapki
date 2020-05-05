@@ -18,6 +18,10 @@
   display: none;
 }
 
+.cookies p{
+  margin-right: 80px;
+}
+
 .cookies p span{
   font-family: 'Montserrat', sans-serif;
 }
@@ -44,6 +48,7 @@
   box-shadow: 4px 4px 0 1px #000;
   cursor: pointer;
   transition: .2s;
+  margin-right: 80px;
 }
 
 .cookies button:hover {
