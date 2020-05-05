@@ -1,7 +1,7 @@
 import React from 'react'
 import { CSSTransition } from 'react-transition-group'
 import './loading.css'
-import logo from '../../images/logo.jpg'
+// import logo from '../../images/logo.jpg'
 
 const Loading = (props) => {
   return (
@@ -12,7 +12,7 @@ const Loading = (props) => {
       unmountOnExit
     >
       <div className='loading'>
-        <img src={logo} alt={logo} />
+        {/* <img src={logo} alt={logo} /> */}
         <div className="dots">
           <div className="dot"></div>
           <div className="dot"></div>
