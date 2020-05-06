@@ -103,7 +103,6 @@ class App extends Component {
         cookiesIsAccepted: false
       })
     }
-
   }
 
   handleAcceptCookies = () => {
